@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background"
+        tools:context=".TicketActivity">
+
+        <TextView
+            android:id="@+id/info"
+            android:layout_width="274dp"
+            android:layout_height="31dp"
+            android:layout_marginStart="@dimen/TitleLeft"
+            android:layout_marginLeft="@dimen/Zero"
+            android:layout_marginTop="@dimen/TitleTop"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/concert_one"
+            android:text="Processing Your Ticket(s)"
+            android:textSize="24dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Switch
+            android:id="@+id/switch1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/SwitchLeft"
+            android:layout_marginLeft="@dimen/Zero"
+            android:layout_marginTop="@dimen/SwitchTop"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/info" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/marginToTitle2"
+            android:layout_marginEnd="@dimen/marginToSwitch"
+            android:layout_marginRight="@dimen/Zero"
+            android:text="Regular"
+            app:layout_constraintEnd_toStartOf="@+id/switch1"
+            app:layout_constraintTop_toBottomOf="@+id/info" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginLeft="@dimen/Zero"
+            android:layout_marginTop="@dimen/marginToTitle2"
+            android:text="Premium"
+            app:layout_constraintStart_toEndOf="@+id/switch1"
+            app:layout_constraintTop_toBottomOf="@+id/info" />
+
+
+        <Spinner
+            android:id="@+id/spinner1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/SpinnerToRegular"
+            android:layout_marginEnd="@dimen/SpinnerRight"
+            android:layout_marginRight="@dimen/Zero"
+            android:entries="@array/ppl_arrays"
+            android:prompt="@string/ppl_tickets"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/ChildTicketTop"
+            android:layout_marginEnd="@dimen/TicketToSpinner"
+            android:layout_marginRight="@dimen/Zero"
+            android:text="Choose # of Child Tickets"
+            app:layout_constraintEnd_toStartOf="@+id/spinner1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Spinner
+            android:id="@+id/spinner2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/SpinnerTop"
+            android:layout_marginEnd="@dimen/SpinnerRight"
+            android:layout_marginRight="@dimen/Zero"
+            android:entries="@array/ppl_arrays"
+            android:prompt="@string/ppl_tickets"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner1" />
+
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/AdultTicketTop"
+            android:layout_marginEnd="@dimen/TicketToSpinner"
+            android:layout_marginRight="@dimen/Zero"
+            android:text="Choose # of Adult Tickets"
+            app:layout_constraintEnd_toStartOf="@+id/spinner2"
+            app:layout_constraintTop_toBottomOf="@+id/textView9" />
+
+
+        <RadioButton
+            android:id="@+id/RadioButton1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="76dp"
+            android:layout_marginEnd="188dp"
+            android:layout_marginRight="@dimen/Zero"
+            android:text="@string/radioButton1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <RadioButton
+            android:id="@+id/RadioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/RadioButtonTop"
+            android:layout_marginEnd="@dimen/RadioButtonRight"
+            android:layout_marginRight="@dimen/Zero"
+            android:text="@string/radioButton2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RadioButton1" />
+
+        <RadioButton
+            android:id="@+id/radioButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/RadioButtonTop"
+            android:layout_marginEnd="240dp"
+            android:layout_marginRight="@dimen/Zero"
+            android:text="@string/radioButton3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/RadioButton2" />
+
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/RadioButtonTop"
+            android:layout_marginEnd="296dp"
+            android:layout_marginRight="@dimen/Zero"
+            android:text="@string/radioButton4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/InstructionsLeft"
+            android:layout_marginLeft="@dimen/Zero"
+            android:layout_marginBottom="@dimen/InstructionsDown"
+            android:text="Pick which rides you want a fast passes for"
+            app:layout_constraintBottom_toTopOf="@+id/RadioButton1"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/CheckBoxLeft"
+            android:layout_marginLeft="@dimen/Zero"
+            android:layout_marginBottom="@dimen/CheckBoxBottom"
+            android:text="@string/checkBox1"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox2"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/CheckBoxLeft"
+            android:layout_marginLeft="@dimen/Zero"
+            android:layout_marginTop="140dp"
+            android:text="@string/checkBox2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton2" />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/CheckBoxLeft"
+            android:layout_marginLeft="@dimen/Zero"
+            android:layout_marginBottom="@dimen/CheckBoxBottom"
+            android:text="@string/checkBox3"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/InstructionsLeft"
+            android:layout_marginLeft="@dimen/Zero"
+            android:layout_marginBottom="@dimen/InstructionsDown"
+            android:text="Pick a Hotel"
+            app:layout_constraintBottom_toTopOf="@+id/checkBox3"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="322dp"
+            android:layout_height="41dp"
+            android:layout_marginTop="@dimen/PriceTop"
+            android:layout_marginEnd="@dimen/PriceEnd"
+            android:layout_marginRight="@dimen/Zero"
+            android:background="@color/colorPrimary"
+            android:fontFamily="@font/concert_one"
+            android:paddingBottom="10dp"
+            android:text="Overall ticket prices:"
+            android:textSize="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageView5" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="@dimen/HotelHeight"
+            android:layout_height="@dimen/HotelHeight"
+            android:layout_marginTop="@dimen/HotelTop"
+            android:layout_marginEnd="@dimen/HotelEnd"
+            android:layout_marginRight="@dimen/Zero"
+            android:src="@drawable/gisney7"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/checkBox2">
+
+        </ImageView>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="123dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="144dp"
+            android:layout_marginRight="@dimen/Zero"
+            android:text="get price"
+            android:onClick="onClick"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

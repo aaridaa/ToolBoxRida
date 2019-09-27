@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="AttractionsHeight">105dp</dimen>
+    <dimen name="AttractionsWidth">190dp</dimen>
+    <dimen name="marginLeftAttractions">13dp</dimen>
+
+    <dimen name="TitleHeight">22dp</dimen>
+    <dimen name="TitleWidth">127dp</dimen>
+    <dimen name="marginTitleToAttractions">6dp</dimen>
+    <dimen name="marginTitleTop">8dp</dimen>
+
+    <dimen name="ParagraphTop">8dp</dimen>
+    <dimen name="ParagraphRight">21dp</dimen>
+
+
+
+    <dimen name="marginToTitle">6dp</dimen>
+    <dimen name="marginToRightAttractions">20dp</dimen>
+
+    <dimen name="TitleTop">28dp</dimen>
+    <dimen name="TitleLeft">68dp</dimen>
+
+    <dimen name="SwitchTop">44dp</dimen>
+    <dimen name="SwitchLeft">184dp</dimen>
+
+    <dimen name="marginToSwitch">20dp</dimen>
+    <dimen name="marginToTitle2">44dp</dimen>
+
+    <dimen name="ChildTicketTop">164dp</dimen>
+    <dimen name="AdultTicketTop">20dp</dimen>
+    <dimen name="TicketToSpinner">24dp</dimen>
+
+
+    <dimen name="SpinnerToRegular">40dp</dimen>
+    <dimen name="SpinnerRight">140dp</dimen>
+    <dimen name="SpinnerTop">20dp</dimen>
+
+    <dimen name="InstructionsLeft">16dp</dimen>
+    <dimen name="InstructionsDown">12dp</dimen>
+
+    <dimen name="RadioButtonTop">16dp</dimen>
+    <dimen name="RadioButtonRight">216dp</dimen>
+
+    <dimen name="CheckBoxBottom">16dp</dimen>
+    <dimen name="CheckBoxLeft">16dp</dimen>
+    <dimen name="Zero">0dp</dimen>
+
+    <dimen name="HotelWidth">231dp</dimen>
+    <dimen name="HotelHeight">138dp</dimen>
+
+    <dimen name="HotelTop">8dp</dimen>
+    <dimen name="HotelEnd">135dp</dimen>
+
+    <dimen name="PriceTop">188dp</dimen>
+    <dimen name="PriceEnd">50dp</dimen>
+
+
+</resources>

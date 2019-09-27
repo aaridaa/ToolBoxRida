@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/background"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        tools:context=".MainActivity">
+
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="351dp"
+            android:layout_height="48dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginRight="@dimen/Zero"
+            android:background="@color/colorPrimary"
+            android:paddingLeft="10dp"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:text="@string/main_title"
+            android:textSize="28dp"
+            app:fontFamily="@font/concert_one"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="244dp"
+            android:layout_height="49dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="84dp"
+            android:layout_marginRight="84dp"
+            android:gravity="center_horizontal"
+            android:text="@string/sub_title"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/title" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="385dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="28dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginRight="@dimen/Zero"
+            android:gravity="center_horizontal"
+            android:text="@string/att_title"
+            android:textColor="@color/colorAccent"
+            android:textSize="12dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="@dimen/AttractionsWidth"
+            android:layout_height="@dimen/AttractionsHeight"
+            android:layout_marginStart="@dimen/marginLeftAttractions"
+            android:layout_marginLeft="@dimen/Zero"
+            android:layout_marginTop="92dp"
+            android:src="@drawable/gisney2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="151dp"
+            android:layout_height="36dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginLeft="@dimen/Zero"
+            android:layout_marginTop="22dp"
+            android:text="@string/radioButton1"
+            android:textColor="@color/colorAccent"
+            android:textSize="14dp"
+            app:fontFamily="@font/concert_one"
+            app:layout_constraintStart_toEndOf="@+id/imageView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="154dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="@dimen/ParagraphTop"
+            android:layout_marginEnd="@dimen/ParagraphRight"
+            android:layout_marginRight="@dimen/Zero"
+            android:scrollbars="vertical"
+            android:text="@string/harry_paragraph"
+            android:textSize="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="@dimen/AttractionsWidth"
+            android:layout_height="@dimen/AttractionsHeight"
+            android:layout_marginStart="@dimen/marginLeftAttractions"
+            android:layout_marginLeft="@dimen/Zero"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/gisney3"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="@dimen/TitleWidth"
+            android:layout_height="@dimen/TitleHeight"
+            android:layout_marginStart="@dimen/marginTitleToAttractions"
+            android:layout_marginLeft="@dimen/Zero"
+            android:layout_marginTop="@dimen/marginTitleTop"
+            android:text="@string/pirate_title"
+            android:textColor="@color/colorAccent"
+            android:textSize="14dp"
+            app:fontFamily="@font/concert_one"
+            app:layout_constraintStart_toEndOf="@+id/imageView3"
+            app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="154dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="@dimen/ParagraphTop"
+            android:layout_marginEnd="@dimen/ParagraphRight"
+            android:layout_marginRight="@dimen/Zero"
+            android:text="@string/pirate_para"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView5" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/AttractionsWidth"
+            android:layout_height="@dimen/AttractionsHeight"
+            android:layout_marginStart="@dimen/marginLeftAttractions"
+            android:layout_marginLeft="@dimen/Zero"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/gisney4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <Button
+            android:id="@+id/NextPage"
+            android:layout_width="106dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="128dp"
+            android:layout_marginRight="@dimen/Zero"
+            android:background="@drawable/gisney9"
+            android:text="@string/first_button"
+            android:textColor="@color/background"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="@dimen/TitleWidth"
+            android:layout_height="@dimen/TitleHeight"
+            android:layout_marginStart="@dimen/marginTitleToAttractions"
+            android:layout_marginLeft="@dimen/Zero"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/concert_one"
+            android:text="@string/cind_title"
+            android:textColor="@color/colorAccent"
+            android:textSize="14dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView"
+            app:layout_constraintTop_toBottomOf="@+id/textView6" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="154dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="@dimen/ParagraphTop"
+            android:layout_marginEnd="@dimen/ParagraphRight"
+            android:layout_marginRight="@dimen/Zero"
+            android:text="@string/cind_para"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="@dimen/AttractionsWidth"
+            android:layout_height="@dimen/AttractionsHeight"
+            android:layout_marginStart="@dimen/marginLeftAttractions"
+            android:layout_marginLeft="@dimen/Zero"
+            android:layout_marginTop="12dp"
+            android:src="@drawable/gisney5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView"></ImageView>
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="@dimen/TitleWidth"
+            android:layout_height="@dimen/TitleHeight"
+            android:layout_marginStart="@dimen/marginTitleToAttractions"
+            android:layout_marginLeft="@dimen/Zero"
+            android:layout_marginTop="22dp"
+            android:fontFamily="@font/concert_one"
+            android:text="@string/golly_title"
+            android:textColor="@color/colorAccent"
+            android:textSize="14dp"
+            app:layout_constraintStart_toEndOf="@+id/imageView4"
+            app:layout_constraintTop_toBottomOf="@+id/textView15" />
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="154dp"
+            android:layout_height="66dp"
+            android:layout_marginTop="@dimen/ParagraphTop"
+            android:layout_marginEnd="@dimen/ParagraphRight"
+            android:layout_marginRight="@dimen/Zero"
+            android:scrollbars="vertical"
+            android:text="@string/golly_para"
+            android:textSize="10sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView16" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
